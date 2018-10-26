@@ -1,4 +1,4 @@
-# mybudget-vuejs
+# Prode de amigos
 
 ## Project setup
 ```
