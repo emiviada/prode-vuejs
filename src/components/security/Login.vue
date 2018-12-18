@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
-    <h1>VueJS App</h1>
+  <div>
+    <h1>Login</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'home'
+  name: 'Login'
 }
 </script>
