@@ -1,0 +1,23 @@
+.login {
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  top: 10px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.75);
+  padding: 20px;
+  @include media-breakpoint-up(sm) {
+    top: 50px;
+  }
+  h1 {
+    font-size: 23px;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img { width: 25%; }
+  }
+  .terms { color: #999999; }
+}

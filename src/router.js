@@ -9,6 +9,7 @@ import store from './store'
 const Layout = () => import(/* webpackChunkName: "common" */ '@/components/common/Layout')
 // Security
 const Login = () => import(/* webpackChunkName: "security" */ '@/components/security/Login')
+const Register = () => import(/* webpackChunkName: "security" */ '@/components/security/Register')
 // Dashboard
 const Dashboard = () => import(/* webpackChunkName: "dashboard" */ '@/components/Dashboard')
 
@@ -42,7 +43,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: Layout,
       beforeEnter: ifAuthenticated,
       redirect: () => {
@@ -53,6 +54,12 @@ export default new Router({
       path: '/login',
       name: 'Login',
       component: Login,
+      beforeEnter: ifNotAuthenticated
+    },
+    {
+      path: '/crear-usuario',
+      name: 'Register',
+      component: Register,
       beforeEnter: ifNotAuthenticated
     },
     {

@@ -1,12 +1,12 @@
 <template>
-  <auth-wrapper :route="'login'" />
+  <auth-wrapper :route="'register'" />
 </template>
 
 <script>
 import AuthWrapper from '@/components/security/AuthWrapper'
 
 export default {
-  name: 'Login',
+  name: 'Register',
   components: { AuthWrapper }
 }
 </script>

@@ -1,0 +1,20 @@
+/*** Overide Modals - https://github.com/euvl/vue-js-modal/blob/master/README.md ***/
+.v--modal-background-click {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.v--modal-box.v--modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  /*top: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;*/
+  padding: 10px;
+  button.close {
+    color: white !important;
+  }
+  @include media-breakpoint-up(sm) {
+    /*top: 50px !important;
+    max-width: 80% !important;
+    height: 90% !important;*/
+  }
+}
+/*** END Modals ***/
